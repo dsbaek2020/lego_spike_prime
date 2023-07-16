@@ -28,13 +28,14 @@ def input_key(cursor):
 
 
 def display_key():
+    #모든 버튼을 25%밝기로 켭니다. 
     for dot in list(key_position.values()):
         x = dot[0]
         y = dot[1]
         light_matrix.set_pixel(x, y, 25)
 
 
-    # 허브 중앙의 픽셀을 켭니다
+    #커서가 가리키는 위치의 버튼을 켭니다. 
     x = key_position[cursor][0]
     y = key_position[cursor][1]
     light_matrix.set_pixel(x, y, 100)
