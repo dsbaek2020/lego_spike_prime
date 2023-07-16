@@ -66,5 +66,8 @@ while True:
         motor.run_to_absolute_position(port.B, 0, 40, direction=motor.SHORTEST_PATH)
         while motor.absolute_position(port.B)>2:
             pass
+
+
+
         
 
